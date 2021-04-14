@@ -1,5 +1,5 @@
 {
-  "name": "Social-Network-API",
+  "name": "social-network-api",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -20,6 +20,7 @@
   "homepage": "https://github.com/Dustymick/Social-Network-API#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^5.12.3"
+    "mongoose": "^5.12.3",
+    "react-scripts": "^4.0.3"
   }
 }
