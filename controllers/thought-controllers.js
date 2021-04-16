@@ -27,9 +27,16 @@ const thoughtController = {
     },
   
 
+   // create thought
+   // instead of req.body, body has been destructured
   createThoughts({ body }, res) {
-    Thought.create(body)
-      .then(dbThoughtData => res.json(dbThoughtData))
+      Thought.create( body )
+      .then(({ _id, _doc }) => {
+          return User.findOneAndUpdate(
+          { username: body.username },
+          { $push: { thoughts: _id } }
+          ).then(res.json(_doc))
+      })
       .catch(err => res.status(400).json(err));
   },
 

@@ -5,7 +5,7 @@ const {
     createThoughts,
     updateThoughts,
     deleteThoughts
-  } = require('../../controllers/thought-controller');
+  } = require('../../controllers/thought-controllers');
 
 router
   .route('/')
