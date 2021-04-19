@@ -1,4 +1,4 @@
-const { Thought } = require('../models');
+const { Thought, User } = require('../models');
 
 const thoughtController = {
     getAllThoughts(req, res) {
@@ -67,4 +67,4 @@ const thoughtController = {
   }
 };
 
-module.exports = ThoughtController;
+module.exports = thoughtController;
